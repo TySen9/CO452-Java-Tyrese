@@ -22,5 +22,14 @@ public class Week1
 
         int id = InputReader.getInt("Enter your id > ");
         System.out.println("Your ID is " + id);
+
+        int height = InputReader.getInt("Enter the height of your rectangle > ");
+        int length = InputReader.getInt("Enter the length of your rectangle > ");
+        int perimeter = length*2 + height*2;
+        int area = length * height;
+        System.out.println("Your rectangle perimeter is " + perimeter);
+        System.out.println("The area is " + area);
+
+        
     } 
 }
