@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 import helpers.*;
 
-//This creates the array Songlist which will be used throughout as it is public
+//This creates the array Songlist which will be used throughout as it is public and is the whole class for this program.
 public class Songlist {
 
     private ArrayList<Song> songs;
