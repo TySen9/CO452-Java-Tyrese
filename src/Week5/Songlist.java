@@ -11,7 +11,7 @@ public class Songlist {
     public Songlist()
     {
         songs = new ArrayList<Song>();
-        addSomeSongs();
+        premadeSongs();
         doMainMenu();
     }
 
@@ -100,7 +100,7 @@ private void printtopSongs()
     printSongs(countAnswer);
 }
 //This is to fill out the array with songs already.
-private void addSomeSongs()
+private void premadeSongs()
 {
     Song song = new Song("4:00A.M.", "Taeko Onuki",45600813);
     songs.add(song);
