@@ -81,13 +81,14 @@ public class MarioWorld extends World
         int pyramidSize = getPyramidSize();
         
         int x = 4; int y = 17;
-        int pyramidStart = x;
-        int pyramidEnd = y;
         
-        for(int ;  )
+        for(int pyramidX = x; pyramidX < pyramidSize; pyramidX++)
         {
-        Block Block = new Block();
-        addObject(Block, x, y);
+            for(int pyramidY = y; pyramidY < pyramidSize; pyramidY++)
+            {
+            Block Block = new Block();
+            addObject(Block, pyramidX, pyramidY);
+            }
         }
     }
     
