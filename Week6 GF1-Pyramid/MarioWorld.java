@@ -5,7 +5,7 @@ import java.lang.*;
  * A new version of the Mario Game which just contains
  * a platform for Mario to walk left to right and a Pyramid
  * 
- * @author Derek Peacock 
+ * @author Tyrese Senior
  * @version 1.0
  */
 public class MarioWorld extends World
@@ -61,8 +61,11 @@ public class MarioWorld extends World
      */
     private int getPyramidSize()
     {
+        do {
         String reply = Greenfoot.ask("Enter the pyramid size (1-8) > ");
-        int size = Integer.parseInt(reply); 
+        int size = Integer.parseInt(reply);
+        }
+        while(size>1 && size<8);
 
         return size;
     } 
@@ -78,8 +81,14 @@ public class MarioWorld extends World
         int pyramidSize = getPyramidSize();
         
         int x = 4; int y = 17;
+        int pyramidStart = x;
+        int pyramidEnd = y;
+        
+        for(int ;  )
+        {
         Block Block = new Block();
         addObject(Block, x, y);
+        }
     }
     
 }
